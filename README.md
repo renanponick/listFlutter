@@ -1,16 +1,34 @@
-# listflutter
+# Sobre o repositório
 
-A new Flutter project.
+Este app irá realizar um CRUD para uma lista.
 
-## Getting Started
+* Possui bibliotecas desatualizadas.
 
-This project is a starting point for a Flutter application.
+# Pré-Requisitos
+Após instalar o Flutter, [baixe](https://developer.android.com/studio) e 
+[instale](https://developer.android.com/studio/install) o Android Studio para
+acessar o Android SDK e criar um emulador Android. 
+[Instruções para criar um emulador](https://developer.android.com/studio/run/managing-avds#createavd)
 
-A few resources to get you started if this is your first Flutter project:
+# Criar um projeto no Flutter
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+```bash
+# Verifica as configurações atuais do flutter
+flutter doctor
+# Cria o novo projeto
+flutter create <nome_do_projeto>
+# Rodar o projeto
+cd <nome_do_projeto>
+flutter run
+```
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Se receber uma mensagem de "No supported devices connected". Execute:
+
+```bash
+# Consulte os emuladores disponiveis
+flutter emulator
+# Vincule o emulador na execução
+flutter emulator --launch Pixel_2_API_30
+# Rode o projeto
+flutter run
+```
